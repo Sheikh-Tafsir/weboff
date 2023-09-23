@@ -62,9 +62,9 @@ const Heromain = () => {
     <div className='heromain'>
         <div className="heromainslider">
             <div className="heromainslides">
-                <img src="/public/slider.png" className="heromainSlideImage"/>
-                <img src="/public/slider 3.jpg" className="heromainSlideImage"/>
-                <img src="/public/slider 4.jpg" className="heromainSlideImage"/>
+                <img src="/slider.png" className="heromainSlideImage"/>
+                <img src="/slider 3.jpg" className="heromainSlideImage"/>
+                <img src="/slider 4.jpg" className="heromainSlideImage"/>
             </div>
         </div>
         <div className='heromainSliderTop'>

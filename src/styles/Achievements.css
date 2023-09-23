@@ -1,7 +1,7 @@
 .topBarAchievements{
     height: 50vh;
     width: 100%;
-    background-image: url('../../../client/public/slider 3.jpg');
+    background-image: url('/slider 3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;

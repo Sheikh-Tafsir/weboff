@@ -9,7 +9,7 @@ import Activities from './pages/activities/Activities';
 import Competitions from './pages/competitions/Competitions';
 import Adminpanel from './pages/adminpanel/Adminpanel';
 import Adminlogin from './pages/adminpanel/Adminlogin';
-import Leaderboard from './components/leaderboard/Leaderboard';
+import Leaderboard from './pages/leaderboard/Leaderboard';
 
 
 const App = () => {

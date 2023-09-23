@@ -7,13 +7,11 @@ import Blogs from './pages/blogs/Blogs';
 import Executives from './pages/executives/Executives';
 import Activities from './pages/activities/Activities';
 import Competitions from './pages/competitions/Competitions';
+import Adminpanel from './pages/adminpanel/Adminpanel';
 
 const App = () => {
   return (
     <>
-      {/* <LandigPage/> */}
-      {/* <About /> */}
-      {/* <Achievements /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandigPage/>} />
@@ -23,7 +21,7 @@ const App = () => {
           <Route path="/executives" element={<Executives/>} />
           <Route path="/activities" element={<Activities/>} />
           <Route path="/competitions" element={<Competitions/>} />
-          
+          <Route path="/adminpanel" element={<Adminpanel/>} />
         </Routes>
       </BrowserRouter>
     </>

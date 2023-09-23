@@ -97,7 +97,7 @@
     border: 0.2vh solid black;   
 }
 .heromainButtonBar button:nth-child(2):hover {
-    background-color: rgb(220,220,220);
+    background-color: rgb(20,20,20);
 }
 @media screen and (min-width: 992px) {
     .heromainSlideButtonBar{

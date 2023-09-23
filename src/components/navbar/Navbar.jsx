@@ -3,12 +3,14 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+// import Link from '@mui/material/Link';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
 import '../../styles/Navbar.css';
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -43,25 +45,29 @@ const Navbar = () => {
                 <AppBar position="static" className="navMenuBar" elevation={0}>
                     <Toolbar className='navMenuSubBar' >
                         <div className='desktopMenu'>
-                          <Button color="inherit" onClick={handleClick}>
-                              Home
+                          <Button color="inherit">
+                              <Link to='/'>HOME</Link>
                           </Button>
                           <Button color="inherit" onClick={handleSubmenuClick}>
-                              Services
+                              Pages
+                          </Button>
+                          <Button color="inherit">
+                              <Link to='/blogs'>Blogs</Link>
                           </Button>
                           <Menu
                               anchorEl={submenuAnchorEl}
                               open={Boolean(submenuAnchorEl)}
                               onClose={handleSubmenuClose}
                           >
-                              <MenuItem onClick={handleSubmenuClose}>Service 1</MenuItem>
-                              <MenuItem onClick={handleSubmenuClose}>Service 2</MenuItem>
+                              <MenuItem onClick={handleSubmenuClose}><Link to='/achievements'>Achievements</Link></MenuItem>
+                              <MenuItem onClick={handleSubmenuClose}><Link to='/executives'>Executives</Link></MenuItem>
+                              <MenuItem onClick={handleSubmenuClose}><Link to='/activities'>Activities</Link></MenuItem>
                           </Menu>
-                          <Button color="inherit" onClick={handleClick}>
-                              About
+                          <Button color="inherit">
+                            <Link to='/about'>ABOUT</Link>
                           </Button>
                           <Button color="inherit" onClick={handleClick}>
-                              Contact
+                            <Link to='/competitions'>Competitions</Link>
                           </Button>
                         </div>
                         <IconButton

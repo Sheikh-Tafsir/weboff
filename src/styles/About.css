@@ -5,7 +5,6 @@
 .topBar{
     height: 43vh;
     width: 100%;
-    background-color: blue;
     color:white;
     text-align: center;
 }
@@ -13,17 +12,20 @@
 @media screen and (min-width: 992px) {
     .textBar{
         height: 86%;
-        padding-top: 6.3%;
+        padding-top: 0%;
     }
     .textBar h2{
         margin-bottom: 2%;
         font-size: 3.7vh;
     }
+    .textBar p{
+        font-size: 2.3vh;
+    }
 }
 @media screen and (max-width: 991px) {
     .textBar{
         height: 86%;
-        padding-top: 20%;
+        padding-top: 10%;
         width: 85%;
         margin: auto;
     }
@@ -31,12 +33,13 @@
         margin-bottom: 4%;
         font-size: 3.7vh;
     }
+    .textBar p{
+        font-size: 2vh;
+    }
 }
 
 
-.textBar p{
-    font-size: 2.3vh;
-}
+
 .footerBar{
     background-color: black;
     height: 14%;

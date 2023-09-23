@@ -8,6 +8,9 @@ import Executives from './pages/executives/Executives';
 import Activities from './pages/activities/Activities';
 import Competitions from './pages/competitions/Competitions';
 import Adminpanel from './pages/adminpanel/Adminpanel';
+import Adminlogin from './pages/adminpanel/Adminlogin';
+import Leaderboard from './components/leaderboard/Leaderboard';
+
 
 const App = () => {
   return (
@@ -21,7 +24,9 @@ const App = () => {
           <Route path="/executives" element={<Executives/>} />
           <Route path="/activities" element={<Activities/>} />
           <Route path="/competitions" element={<Competitions/>} />
-          <Route path="/adminpanel" element={<Adminpanel/>} />
+          <Route path="/admin/panel" element={<Adminpanel/>} />
+          <Route path="/admin/login" element={<Adminlogin/>} />
+          <Route path="/leaderboard" element={<Leaderboard/>} />
         </Routes>
       </BrowserRouter>
     </>
